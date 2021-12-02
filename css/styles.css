@@ -161,7 +161,7 @@ button {
 .header {
 	padding-top: 24px;
 	padding-bottom: 25px;
-	border: 1px solid var(--header-border);
+	border-bottom: 1px solid var(--header-border);
 }
 
 .mail-icon {
@@ -224,6 +224,9 @@ button {
 	flex-grow: 1;
 	background-repeat: no-repeat;
 	background-position: center;
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
 }
 
 /*-----------------------FEATURES---------------------------*/
@@ -253,13 +256,18 @@ button {
 }
 
 .features-icon {
-	margin: 25px 100px;
 	border-radius: 4px;
 	border: none;
 }
 
 .features-icon-div {
 	background: var(--third-body-background-color);
+	width: 270px;
+	height: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
 	margin-bottom: 30px;
 }
 
@@ -461,15 +469,14 @@ button {
 	display: grid;
 	grid-template-columns: max-content max-content;
 	gap: 70px;
+	align-items: baseline;
 }
 
 .join-us {
 	font-size: 14px;
-	line-height: 1, 14;
+	line-height: 1.14;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
-
-	padding-top: 10px;
 
 	color: var(--first-body-background-color);
 }
@@ -550,6 +557,12 @@ button {
 	border: 1px solid var(--shade);
 	box-sizing: border-box;
 	margin-bottom: 30px;
+}
+
+.information-item:focus,
+.information-item:hover {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+		1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* -------------------BUTTONS_PORTFOLIO--------------------- */
