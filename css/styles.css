@@ -224,7 +224,7 @@ button {
 	flex-grow: 1;
 	background-repeat: no-repeat;
 	background-position: center;
-	max-width: 100%;
+	max-width: 1600px;
 	max-height: 100%;
 	margin: auto;
 }
